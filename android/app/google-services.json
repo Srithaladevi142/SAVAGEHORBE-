@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "292704001968",
+    "firebase_url": "https://savage-horbe.firebaseio.com",
+    "project_id": "savage-horbe",
+    "storage_bucket": "savage-horbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292704001968:android:ae995ef87a0eb85d8c0075",
+        "android_client_info": {
+          "package_name": "com.example.gre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292704001968-4eghjvn17c5dh9u2lnujtvf7c15knlb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAexMqSO4JlGamv3h1qNGiN-1OejamsEYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292704001968-4eghjvn17c5dh9u2lnujtvf7c15knlb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292704001968:android:0ae95c863e1c65fc8c0075",
+        "android_client_info": {
+          "package_name": "com.example.greeny_go"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292704001968-4eghjvn17c5dh9u2lnujtvf7c15knlb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAexMqSO4JlGamv3h1qNGiN-1OejamsEYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292704001968-4eghjvn17c5dh9u2lnujtvf7c15knlb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292704001968:android:c6af09d1b3742e7b8c0075",
+        "android_client_info": {
+          "package_name": "com.example.nambivanga_santhosamaponga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292704001968-4eghjvn17c5dh9u2lnujtvf7c15knlb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAexMqSO4JlGamv3h1qNGiN-1OejamsEYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292704001968-4eghjvn17c5dh9u2lnujtvf7c15knlb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
