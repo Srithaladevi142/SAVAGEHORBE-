@@ -1,16 +1,9 @@
 # greeny_go
 
-A new Flutter project.
+* The proposed GREENY_GO voice-assistance app maintains a crop repository for the warehouses and farmers to monitor the quality and quantity of stored crops which helps in suggesting crop plantation using ML.
 
-## Getting Started
+* This in turn boosts the profit of farmers through high yield and price normalization.
 
-This project is a starting point for a Flutter application.
+* In order to reduce agricultural wastage, the QR code is generated for the crops stored in warehouses that notifies the farmers to evacuate goods at right time and in addition shelf life of crops is monitored by temperature and humidity sensors.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Logistics are shared between farmers, warehouse and buyers for the transportation so that items can be easily transferred and directly delivered to the customers in an efficient cost.
