@@ -1,0 +1,172 @@
+{
+    "Email" : "Email",
+     
+    "Password" : "Password",
+     
+    "Login" : "Login",
+     
+    "Signup" : "SignUp",
+     
+    "Signup with Google" : "Signup with Google",
+     
+    "Register" : "Register",
+     
+    " Full Name" : "Name",
+     
+    "Mobile Number" : "Mobile Number",
+     
+    "Farmers" : "Farmers",
+     
+    "Consumer" : "Consumer", 
+
+    
+
+    "warehouse authority" : "warehouse authorit",
+    
+    "Logistics" : "Logistics",
+     
+    "cropdetails" : "Crop Details",
+     
+    "cropname" : "Crop Name",
+     
+    "quantity" : "Quantity in Kg/Ton",
+     
+    "location" : "Location",
+    "images" : "Images",
+     
+    "submit" : "Submit",
+     
+    "Home" : "Home",
+     
+    "My Account" : "My Account",
+     
+    "Logistics Booking" : "Logistics Booking",
+     
+    "My Order" : "My Order",
+     
+    "Payment" : "Payment",
+     
+    "warehouse booking" : "Warehouse Booking",
+     
+    "crop suggestion" : "Crop suggestion",
+     
+    "weather forecast" : "Weather forecast",
+     
+    "need help" : "need help",
+     
+    "logout" : "logout",
+     
+    "mini van" : "mini van",
+     
+    "truck" : "truck",
+     
+    "customer id" : "customer id",
+     
+    "drop location" : "drop location",
+    
+  "tab_home": "Home",
+  "key_password": "Password",
+  "key_must_be_at_least_6_characters": "Must be at least 6 characters",
+  "key_email": "Email",
+  "key_please_enter_valid_email": "Please enter valid email",
+  "key_last_name": "Last name",
+  "key_enter_last_name": "Enter last name",
+  "key_first_name": "First name",
+  "key_enter_first_name": "Enter first name",
+  "key_next": "Next",
+    
+
+
+     
+    "details" : "details",
+ 
+
+     
+    "payment history" : "payment history",
+     
+    "current payment" : "current payment",
+     
+    "carrot" : "carrot",
+     
+    "tomato" : "tomato",
+     
+    "garlic" : "garlic",
+     
+    "warehouse details" : "warehouse details",
+     
+    "scan qr code" : "scan qr code",
+     
+    "generate qr code" : "generate qr code",
+     
+    "cold storage availability" : "cold storage availability",
+     
+    "available storage space" : "available storage space",
+     
+    "total storage space" : "total storage space",
+     
+    "qr code scanner" : "qr code scanner",
+     
+    "start camera scan" : "start camera scan",
+     
+    "indate(with time)" : "indate(with time)",
+
+    "outdate (with time)" : "outdate (with time)",
+     
+    "rent as per weight" : "rent as per weight",
+     
+    "rent as per time" : "rent as per time",
+     
+    "cold storage temperature" : "cold storage temperature",
+     
+    "minimum temperature(deg cel)" : "minimum temperature(deg cel)",
+     
+    "maximum temperature(deg cel" : "maximum temperature(deg cel",
+     
+    "categories" : "categories",
+     
+    "fruits" : "fruits",
+     
+    "vegetables" : "vegetables",
+     
+    "grains" : "grains",
+     
+    "recent products" : "recent products",
+     
+    "chat" : "chat",
+     
+    "my wallet" : "my wallet",
+     
+    "subscription" : "subscription",
+     
+    "checkout" : "checkout",
+     
+    "credit card" : "credit card",
+     
+    "net banking" : "net banking",
+     
+    "paypal" : "paypal",
+     
+    "enter the card name" : "enter the card name",
+     
+    "enter the card number" : "enter the card number",
+     
+    "enter the cvv" : "enter the cvv",
+     
+    "enter the expiry mm/yy" : "enter the expiry mm/yy",
+     
+    "make payment" : "make payment",
+     
+    "cart" : "cart",
+      
+    "enter the quantity in kg" : "enter the quantity in kg",
+     
+    "buy now" : "buy now",
+     
+    "product details" : "product details",
+     
+    "recommended products" : "recommended products",
+     
+    " garlic" : " garlic",
+     
+    "potato" : "potato"
+    }

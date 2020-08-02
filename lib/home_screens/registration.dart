@@ -11,6 +11,10 @@ import 'package:greeny_go/otp/welcome.dart';
 import 'package:greeny_go/ware/home_screen.dart';
 import 'package:greeny_go/voice.dart';
 import 'package:greeny_go/consumers/myhome.dart';
+import 'package:speech_recognition/speech_recognition.dart';
+
+import '../application.dart';
+import '../apptranslation.dart';
 
 // import 'package:gre/home_screens/signup/consumerssignin.dart';
 // import 'package:gre/home_screens/signup/farmerssignup.dart';
@@ -28,11 +32,91 @@ String mobileNumber;
 String password;
 
 class _RegisterState extends State<Register> {
+  static final List<String> languagesList = application.supportedLanguages;
+  static final List<String> languageCodesList =
+      application.supportedLanguagesCodes;
+
+  final Map<dynamic, dynamic> languagesMap = {
+    languagesList[0]: languageCodesList[0],
+    languagesList[1]: languageCodesList[1],
+    languagesList[2]: languageCodesList[2],
+  };
+
+  String label = languagesList[0];
+
+  final formKey = new GlobalKey<FormState>();
+  final scaffoldKey = new GlobalKey<ScaffoldState>();
+
+  final teEmail = TextEditingController();
+  final tePassword = TextEditingController();
+  final tename = TextEditingController();
+
+  FocusNode _focusNodeEmail = new FocusNode();
+  FocusNode _focusNodePassword = new FocusNode();
+  FocusNode _focusNodeName = new FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    application.onLocaleChanged = onLocaleChange;
+    onLocaleChange(Locale(languagesMap["English"]));
+  }
+
+  void onLocaleChange(Locale locale) async {
+    setState(() {
+      AppTranslations.load(locale);
+    });
+  }
+
+  @override
+  void dispose() {
+    teEmail.dispose();
+    tePassword.dispose();
+    super.dispose();
+  }
+
+  void _select(String language) {
+    print("dd " + language);
+    onLocaleChange(Locale(languagesMap[language]));
+    setState(() {
+      if (language == "हिंदी") {
+        label = "हिंदी";
+      } else if (language == "தமிழ்") {
+        label = "தமிழ்";
+      } else {
+        label = language;
+      }
+    });
+  }
+
   String dropdownValue;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.cyan[50],
+        appBar: new AppBar(
+          backgroundColor: Colors.cyan[50],
+          title: new Text(
+            " ",
+            style: new TextStyle(color: Colors.white),
+          ),
+          actions: <Widget>[
+            PopupMenuButton<String>(
+              // overflow menu
+              onSelected: _select,
+              icon: new Icon(Icons.language, color: Colors.white),
+              itemBuilder: (BuildContext context) {
+                return languagesList
+                    .map<PopupMenuItem<String>>((String choice) {
+                  return PopupMenuItem<String>(
+                    value: choice,
+                    child: Text(choice),
+                  );
+                }).toList();
+              },
+            ),
+          ],
+        ),
         body: Center(
           child: ListView(children: <Widget>[
             Column(
@@ -56,9 +140,9 @@ class _RegisterState extends State<Register> {
                         suffixIcon: IconButton(
                             icon: Icon(Icons.keyboard_voice),
                             onPressed: () {
-                              VoiceHome();
+                              SpeechRecognition();
                             }),
-                        hintText: 'First Name',
+                        hintText: 'Name',
                         hintStyle: TextStyle(color: Colors.black),
                         filled: true,
                         fillColor: Colors.white,
@@ -106,7 +190,7 @@ class _RegisterState extends State<Register> {
                         suffixIcon: IconButton(
                             icon: Icon(Icons.keyboard_voice),
                             onPressed: () {
-                              VoiceHome();
+                              SpeechRecognition();
                             }),
                         hintText: 'Email',
                         hintStyle: TextStyle(color: Colors.black),
@@ -134,11 +218,6 @@ class _RegisterState extends State<Register> {
                     keyboardType: TextInputType.phone,
                     decoration: InputDecoration(
                         prefixIcon: Icon(Icons.phone),
-                        suffixIcon: IconButton(
-                            icon: Icon(Icons.keyboard_voice),
-                            onPressed: () {
-                              VoiceHome();
-                            }),
                         hintText: 'Mobile Number',
                         hintStyle: TextStyle(color: Colors.black),
                         filled: true,

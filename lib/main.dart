@@ -32,19 +32,6 @@ void main() {
       )));
 }
 
-const languages = const [
-  const Language('English', 'en_US'),
-  const Language('தமிழ்', 'tn_in'),
-  const Language('हिन्दी', 'hi_in'),
-];
-
-class Language {
-  final String name;
-  final String code;
-
-  const Language(this.name, this.code);
-}
-
 class ScreensController extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

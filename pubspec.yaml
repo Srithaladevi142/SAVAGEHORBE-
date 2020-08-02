@@ -39,6 +39,11 @@ dependencies:
   provider: ^4.3.1
   easy_localization: ^2.3.2
   speech_recognition: ^0.3.0+1
+  avatar_glow: ^1.2.0
+  highlight_text: ^0.7.2
+  speech_to_text: ^2.3.0
+  english_words: ^3.1.5
+  permission_handler: ^5.0.1+1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -66,6 +71,10 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - images/
+    - assets/localization_en.json
+    - assets/localization_hi.json
+    - assets/localization_tn.json
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

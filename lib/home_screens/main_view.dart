@@ -315,6 +315,10 @@ import 'package:image_picker/image_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+import '../app_translations_delegate.dart';
+import '../application.dart';
+import '../apptranslation.dart';
+import '../custom_text_field.dart';
 import '../notification.dart';
 
 class MainView extends StatefulWidget {
@@ -323,6 +327,75 @@ class MainView extends StatefulWidget {
 }
 
 class _CropDetailsState extends State<MainView> {
+  static final List<String> languagesList = application.supportedLanguages;
+  static final List<String> languageCodesList =
+      application.supportedLanguagesCodes;
+
+  final Map<dynamic, dynamic> languagesMap = {
+    languagesList[0]: languageCodesList[0],
+    languagesList[1]: languageCodesList[1],
+    languagesList[2]: languageCodesList[2],
+  };
+
+  String label = languagesList[0];
+
+  final formKey = new GlobalKey<FormState>();
+  final scaffoldKey = new GlobalKey<ScaffoldState>();
+
+  final tecropdetails = TextEditingController();
+  final tecropname = TextEditingController();
+  final tequantity = TextEditingController();
+  final telocation = TextEditingController();
+  final tesubmit = TextEditingController();
+  final teimages = TextEditingController();
+
+  FocusNode _focusNodecropdetails = new FocusNode();
+  FocusNode _focusNodecropname = new FocusNode();
+  FocusNode _focusNodelocation = new FocusNode();
+  FocusNode _focusNodeimages = new FocusNode();
+  FocusNode _focusNodesubmit = new FocusNode();
+  FocusNode _focusNodequantity = new FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    application.onLocaleChanged = onLocaleChange;
+    onLocaleChange(Locale(
+      languagesMap["Hindi"],
+    ));
+  }
+
+  void onLocaleChange(Locale locale) async {
+    setState(() {
+      AppTranslations.load(locale);
+    });
+  }
+
+  @override
+  void dispose() {
+    tecropdetails.dispose();
+    tecropname.dispose();
+    tequantity.dispose();
+    telocation.dispose();
+    teimages.dispose();
+    tesubmit.dispose();
+    super.dispose();
+  }
+
+  void _select(String language) {
+    print("dd " + language);
+    onLocaleChange(Locale(languagesMap[language]));
+    setState(() {
+      if (language == "Hindi") {
+        label = "हिंदी";
+      } else if (language == "Tamil") {
+        label = "தமிழ்";
+      } else {
+        label = language;
+      }
+    });
+  }
+
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   final GoogleSignIn _googleSignIn = GoogleSignIn();
@@ -534,18 +607,44 @@ class _CropDetailsState extends State<MainView> {
         ),
       ),
       appBar: AppBar(
-        title: Text('              Crop Details'),
+        title: CustomTextField(
+          inputBoxController: tecropdetails,
+          focusNod: _focusNodecropdetails,
+          textSize: 12.0,
+          textFont: "Nexa_Bold",
+        ).textFieldWithOutPrefix(
+            AppTranslations.of(context).text("cropdetails"),
+            AppTranslations.of(context).text("")),
         backgroundColor: Colors.brown,
+        actions: <Widget>[
+          PopupMenuButton<String>(
+            // overflow menu
+            onSelected: _select,
+            icon: new Icon(Icons.language, color: Colors.white),
+            itemBuilder: (BuildContext context) {
+              return languagesList.map<PopupMenuItem<String>>((String choice) {
+                return PopupMenuItem<String>(
+                  value: choice,
+                  child: Text(choice),
+                );
+              }).toList();
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 70, right: 250),
-              child: Text(
-                'CROP NAME',
-                style: TextStyle(fontSize: 15),
-              ),
+              child: CustomTextField(
+                inputBoxController: tecropname,
+                focusNod: _focusNodecropname,
+                textSize: 12.0,
+                textFont: "Nexa_Bold",
+              ).textFieldWithOutPrefix(
+                  AppTranslations.of(context).text("cropname"),
+                  AppTranslations.of(context).text("")),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 50, left: 50),
@@ -554,55 +653,61 @@ class _CropDetailsState extends State<MainView> {
                   suffixIcon: IconButton(
                       icon: Icon(Icons.keyboard_voice),
                       onPressed: () {
-                        VoiceHome();
+                        //SpeechScreen();
                       }),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 30, right: 250),
-              child: Text(
-                'QUANTITY In Kg/Ton',
-                style: TextStyle(fontSize: 15),
-              ),
+              child: CustomTextField(
+                inputBoxController: tequantity,
+                focusNod: _focusNodequantity,
+                textSize: 12.0,
+                textFont: "Nexa_Bold",
+              ).textFieldWithOutPrefix(
+                  AppTranslations.of(context).text("quatity"),
+                  AppTranslations.of(context).text("")),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 50, left: 50),
               child: TextFormField(
                 decoration: InputDecoration(
                   suffixIcon: IconButton(
-                      icon: Icon(Icons.keyboard_voice),
-                      onPressed: () {
-                        VoiceHome();
-                      }),
+                      icon: Icon(Icons.keyboard_voice), onPressed: () {}),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 30, right: 250),
-              child: Text(
-                'LOCATION',
-                style: TextStyle(fontSize: 15),
-              ),
+              child: CustomTextField(
+                inputBoxController: telocation,
+                focusNod: _focusNodelocation,
+                textSize: 12.0,
+                textFont: "Nexa_Bold",
+              ).textFieldWithOutPrefix(
+                  AppTranslations.of(context).text("location"),
+                  AppTranslations.of(context).text("")),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 50, left: 50),
               child: TextFormField(
                 decoration: InputDecoration(
                   suffixIcon: IconButton(
-                      icon: Icon(Icons.keyboard_voice),
-                      onPressed: () {
-                        VoiceHome();
-                      }),
+                      icon: Icon(Icons.keyboard_voice), onPressed: () {}),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 30, right: 250),
-              child: Text(
-                'IMAGES',
-                style: TextStyle(fontSize: 15),
-              ),
+              child: CustomTextField(
+                inputBoxController: teimages,
+                focusNod: _focusNodeimages,
+                textSize: 12.0,
+                textFont: "Nexa_Bold",
+              ).textFieldWithOutPrefix(
+                  AppTranslations.of(context).text("images"),
+                  AppTranslations.of(context).text("")),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 50, left: 50),
@@ -623,7 +728,14 @@ class _CropDetailsState extends State<MainView> {
             Padding(
               padding: const EdgeInsets.only(top: 40),
               child: RaisedButton(
-                  child: Text('SUBMIT'),
+                  child: CustomTextField(
+                    inputBoxController: tesubmit,
+                    focusNod: _focusNodesubmit,
+                    textSize: 12.0,
+                    textFont: "Nexa_Bold",
+                  ).textFieldWithOutPrefix(
+                      AppTranslations.of(context).text("submit"),
+                      AppTranslations.of(context).text(" ")),
                   onPressed: () {
                     Fluttertoast.showToast(
                         msg: "Added Successfully",

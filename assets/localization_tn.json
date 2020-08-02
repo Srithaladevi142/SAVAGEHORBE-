@@ -1,0 +1,167 @@
+{
+    
+
+
+
+
+
+    "Email" : "மின்னஞ்சல்",
+     
+    "Password" : "கடவுச்சொல்",
+     
+    "Login" : "உள்நுழைய",
+     
+    "Signup" : "பதிவுபெறுதல்",
+     
+    "signup with google" : "கூகிள் உடன் பதிவுபெறுதல்",
+     
+    "Register" : "பதிவு",
+     
+    "Name" : "பெயர்",
+     
+    "mobile number" : "கைபேசி எண்",
+     
+    "Farmers" : "விவசாயிகள்",
+     
+    "Consumer" : "நுகர்வோர்", 
+
+    
+
+    "warehouse authority" : "கிடங்கு அதிகாரம்",
+    
+    "Logistics" : "தளவாடங்கள்",
+     
+    "cropdetails" : "பயிர் விவரங்கள்",
+     
+    "cropname" : "பயிர் பெயர்",
+     
+    "quantity" : "அளவு",
+     
+    "location" : "இடம்",
+    "images" : "படங்கள்",
+     
+    "submit" : "சமர்ப்பி",
+     
+    "home" : "வீடு",
+     
+    "my account" : "என் கணக்கு",
+     
+    "logistics booking" : "தளவாட முன்பதிவு",
+     
+    "my order" : "எனது உத்தரவு",
+     
+    "payment" : "கட்டணம்",
+     
+    "warehouse booking" : "கிடங்கு முன்பதிவு",
+     
+    "crop suggestion" : "பயிர் பரிந்துரை",
+     
+    "weather forecast" : "வானிலை முன்னறிவிப்பு",
+     
+    "need help" : "உதவி தேவை",
+     
+    "logout" : "வெளியேறு",
+     
+    "mini van" : "மினி வேன்",
+     
+    "truck" : "टடிரக்",
+     
+    "customer id" : "வாடிக்கையாளர் ஐடி",
+     
+    "drop location" : "இடத்தைக் கைவிடு",
+    
+
+
+     
+    "details" : "விவரங்கள்",
+ 
+
+     
+    "payment history" : "கட்டண வரலாறு",
+     
+    "current payment" : "தற்போதைய கட்டணம்",
+     
+    "carrot" : "கேரட்",
+     
+    "tomato" : "தக்காளி",
+     
+    "garlic" : "பூண்டு",
+     
+    "warehouse details" : "கிடங்கு விவரங்கள்",
+     
+    "scan qr code" : "ஸ்கேன் qr குறியீடு",
+     
+    "generate qr code" : "Qr குறியீட்டை உருவாக்கு",
+     
+    "cold storage availability" : "குளிர் சேமிப்பு கிடைக்கும்",
+     
+    "available storage space" : "கிடைக்கும் சேமிப்பு இடம்",
+     
+    "total storage space" : "மொத்த சேமிப்பு இடம்",
+     
+    "qr code scanner" : "Qr குறியீடு ஸ்கேனர்",
+     
+    "start camera scan" : "கேமரா ஸ்கேன் தொடங்க",
+     
+    "indate(with time)" : "தேதியில்(நேரத்துடன்)",
+
+    "outdate (with time)" : "காலாவதியானது (நேரத்துடன்)",
+     
+    "rent as per weight" : "எடைக்கு ஏற்ப வாடகை",
+     
+    "rent as per time" : "நேரத்திற்கு ஏற்ப வாடகை",
+     
+    "cold storage temperature" : "குளிர் சேமிப்பு வெப்பநிலை",
+     
+    "minimum temperature(deg cel)" : "குறைந்தபட்ச வெப்பநிலை (டிகிரி செல்சியஸ்)",
+     
+    "maximum temperature" : "அதிகபட்ச வெப்பநிலை(டிகிரி செல்சியஸ்)",
+     
+    "categories" : "பிரிவுகள்",
+     
+    "fruits" : "பழங்கள்",
+     
+    "vegetables" : "காய்கறிகள்",
+     
+    "grains" : "தானியங்கள்",
+     
+    "recent products" : "சமீபத்திய தயாரிப்புகள்",
+     
+    "chat" : "அரட்டை",
+     
+    "my wallet" : "என் பணப்பை",
+     
+    "subscription" : "சந்தா",
+     
+    "checkout" : "சரிபார்",
+     
+    "credit card" : "கடன் அட்டை",
+     
+    "net banking" : "நிகர வங்கி",
+     
+    "paypal" : "பேபால்",
+     
+    "enter the card name" : "அட்டை பெயரை உள்ளிடவும்",
+     
+    "enter the card number" : "அட்டை எண்ணை உள்ளிடுக",
+     
+    "enter the cvv" : "Cvv ஐ உள்ளிடுக",
+     
+    "enter the expiry mm/yy" : "காலாவதி தேதியை உள்ளிடவும்",
+     
+    "make payment" : "பணம் கட்டு",
+     
+    "cart" : "வண்டி",
+      
+    "enter the quantity in kg" : "கிலோ அளவை உள்ளிடுக",
+     
+    "buy now" : "இப்போது வாங்க",
+     
+    "product details" : "தயாரிப்பு விவரங்கள்",
+     
+    "recommended products" : "பரிந்துரைக்கப்பட்ட தயாரிப்புகள்",
+     
+    " garlic" : "लहसुन",
+     
+    "potato" : "உருளைக்கிழங்கு"
+    }

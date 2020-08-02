@@ -1,0 +1,164 @@
+{
+"Email" : "ईमेल",
+ 
+"Password" : "कुंजिका",
+ 
+"Login" : "लॉग इन करें",
+ 
+"Signup" : "साइन अप करें",
+ 
+"signup with google" : "Google के साथ साइन अप करें",
+ 
+"Register" : "रजिस्टर करें",
+ 
+"Name" : "नाम",
+ 
+"mobile number" : "मोबाइल नंबर",
+ 
+"Farmers" : "किसानों",
+ 
+"Consumer" : "उपभोक्ता", 
+
+"key_password": "पारण शब्द",
+"key_must_be_at_least_6_characters": "कम से कम 6 अक्षर का होना चाहिए",
+"key_email": "ईमेल",
+"key_please_enter_valid_email": "कृपया वैध ईमेल दर्ज़ करें",
+"key_last_name": "अंतिम नाम",
+"key_enter_last_name": "अंतिम नाम दर्ज करो",
+"key_first_name": "पहला नाम",
+"key_enter_first_name": "पहला नाम डालो",
+"key_next": "आगामी",
+"warehouse authority" : "गोदाम प्राधिकरण",
+
+"Logistics" : "रसद",
+ 
+"cropdetails" : "फसल विवरण",
+ 
+"cropname" : "फसल का नाम",
+ 
+"quantity" : "मात्रा",
+ 
+"location" : "स्थान",
+ 
+"images" : "इमेजिस",
+ 
+"submit" : "प्रस्तुत",
+ 
+"home" : "घर",
+ 
+"my account" : "मेरा खाता",
+ 
+"logistics booking" : "रसद बुकिंग",
+ 
+"my order" : "मेरा आदेश",
+ 
+"payment" : "भुगतान",
+ 
+"warehouse booking" : "गोदाम बुकिंग",
+ 
+"crop suggestion" : "फसल का सुझाव",
+ 
+"weather forecast" : "मौसम पूर्वानुमान",
+ 
+"need help" : "मौसम पूर्वानुमान",
+ 
+"logout" : "लॉग आउट",
+ 
+"mini van" : "मिनी वैन",
+ 
+"truck" : "ट्रक",
+ 
+"customer id" : "ग्राहक आईडी, ग्राहक पहचान",
+ 
+"drop location" : "ड्रॉप स्थान",
+ 
+"details" : "विवरण",
+ 
+"payment history" : "भुगतान इतिहास",
+ 
+"current payment" : "वर्तमान भुगतान",
+ 
+"carrot" : "गाजर",
+ 
+"tomato" : "टमाटर",
+ 
+"garlic" : "लहसुन",
+ 
+"warehouse details" : "गोदाम विवरण",
+ 
+"scan qr code" : "गोदाम विवरण",
+ 
+"generate qr code" : "qr कोड जनरेट करें",
+ 
+"cold storage availability" : "कोल्ड स्टोरेज की उपलब्धता",
+ 
+"available storage space" : "उपलब्ध संग्रहण स्थान",
+ 
+"total storage space" : "कुल संग्रहण स्थान",
+ 
+"qr code scanner" : "क्यूआर कोड स्कैनर",
+ 
+"start camera scan" : "कैमरा स्कैन शुरू करें",
+ 
+"indate(with time)" : "तिथि में (समय के साथ)",
+ 
+"outdate (with time)" : "आगे बढ़ना (समय के साथ)",
+ 
+"rent as per weight" : "वजन के अनुसार किराया",
+ 
+"rent as per time" : "समय के अनुसार किराया",
+ 
+"cold storage temperature" : "कोल्ड स्टोरेज का तापमान",
+ 
+"minimum temperature(deg cel)" : "न्यूनतम तापमान (डिग्री सेल्सियस)",
+ 
+"maximum temperature" : "maximum temperature",
+ 
+"categories" : "श्रेणियाँ",
+ 
+"fruits" : "फल",
+ 
+"vegetables" : "सब्जियां",
+ 
+"grains" : "अनाज",
+ 
+"recent products" : "हाल के उत्पादों",
+ 
+"chat" : "बातचीत",
+ 
+"my wallet" : "मेरा बटुआ",
+ 
+"subscription" : "अंशदान",
+ 
+"checkout" : "चेक आउट",
+ 
+"credit card" : "क्रेडिट कार्ड",
+ 
+"net banking" : "नेट बैंकिंग",
+ 
+"paypal" : "paypal",
+ 
+"enter the card name" : "कार्ड का नाम दर्ज करें",
+ 
+"enter the card number" : "कार्ड नंबर दर्ज करें",
+ 
+"enter the cvv" : "CVV दर्ज करें",
+ 
+"enter the expiry mm/yy" : "एक्सपायरी मिमी / yy दर्ज करें",
+ 
+"make payment" : "भुगतान करो",
+ 
+"cart" : "गाड़ी",
+ 
+"enter the quantity in kg" : "मात्रा को किलो में दर्ज करें",
+ 
+"buy now" : "अभी खरीदें",
+ 
+"product details" : "उत्पाद विवरण",
+ 
+"recommended products" : "सिफ़ारिश किये हुए उत्पाद",
+ 
+" garlic" : "लहसुन",
+ 
+"potato" : "आलू"
+}
