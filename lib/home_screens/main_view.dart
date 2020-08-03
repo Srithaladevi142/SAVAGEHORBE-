@@ -257,7 +257,7 @@ class _CropDetailsState extends State<MainView> {
             Padding(
               padding: const EdgeInsets.only(top: 30, right: 250),
               child: Text(
-                'QUANTITY IN KG/TON',
+                '   QUANTITY IN KG/TON',
                 style: TextStyle(fontSize: 15),
               ),
             ),
@@ -271,6 +271,19 @@ class _CropDetailsState extends State<MainView> {
               padding: const EdgeInsets.only(top: 30, right: 250),
               child: Text(
                 'LOCATION',
+                style: TextStyle(fontSize: 15),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 50, left: 50),
+              child: TextFormField(
+                decoration: InputDecoration(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 70, right: 250),
+              child: Text(
+                'Description',
                 style: TextStyle(fontSize: 15),
               ),
             ),
