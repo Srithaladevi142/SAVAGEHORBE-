@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   carousel_pro: ^1.0.0
   firebase_auth: ^0.16.1
   google_sign_in: ^4.5.1
