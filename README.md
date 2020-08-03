@@ -8,5 +8,7 @@
 
 * Logistics are shared between farmers, warehouse and buyers for the transportation so that items can be easily transferred and directly delivered to the customers in an efficient cost.
 
+* IVRS system to make the app user friendly for farmer.
+
 
 *  screenshots of the app has been uploaded for reference
