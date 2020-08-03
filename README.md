@@ -7,3 +7,6 @@
 * In order to reduce agricultural wastage, the QR code is generated for the crops stored in warehouses that notifies the farmers to evacuate goods at right time and in addition shelf life of crops is monitored by temperature and humidity sensors.
 
 * Logistics are shared between farmers, warehouse and buyers for the transportation so that items can be easily transferred and directly delivered to the customers in an efficient cost.
+
+
+*  screenshots of the app has been uploaded for reference
