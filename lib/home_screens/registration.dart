@@ -3,9 +3,10 @@ import 'package:greeny_go/consumers/home.dart';
 import 'package:greeny_go/home_page.dart';
 // import 'package:gre/home_screens/home_page.dart';
 import 'package:greeny_go/home_screens/main_view.dart';
+import 'package:greeny_go/home_screens/translationmain.dart';
 import 'package:greeny_go/otp/mainotp.dart';
 import 'package:greeny_go/otp/mainpage1.dart';
-import 'package:greeny_go/otp/welcome.dart';
+
 // import 'package:gre/home_screens/signup/farmerssignup.dart';
 // import 'package:gre/home_screens/signup/warehousesignup.dart';
 import 'package:greeny_go/ware/home_screen.dart';
@@ -334,7 +335,7 @@ class _RegisterState extends State<Register> {
                               : dropdownValue == 'WareHouse Authority'
                                   ? HomeScreen()
                                   : dropdownValue == 'Logistics Services'
-                                      ? MainPage1()
+                                      ? MyApp1()
                                       : dropdownValue == 'Consumers'
                                           ? HomePage()
                                           : Container();

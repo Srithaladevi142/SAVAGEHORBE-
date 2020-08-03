@@ -125,51 +125,19 @@ class _HomePageState extends State<HomePage222> {
                       'SUBMIT',
                     ),
                   )),
-              Container(
-                  width: double.infinity,
-                  padding: EdgeInsets.only(top: 30, right: 40, left: 40),
-                  child: RaisedButton(
-                    onPressed: () {
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (BuildContext context) {
-                      //   return MapsPage();
-                      // }));
-                    },
-                    padding: EdgeInsets.symmetric(vertical: 16),
-                    color: Colors.amber,
-                    elevation: 10,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(40))),
-                    child: Text(
-                      'MAP',
-                    ),
-                  )),
-              // Padding(
-              //   padding: const EdgeInsets.only(top: 20),
-              //   child: RaisedButton(
-              //     color: Colors.amber,
-              //     onPressed: () {
-              //       Navigator.push(context,
-              //           MaterialPageRoute(builder: (BuildContext context) {
-              //         return DetailPage();
-              //       }));
-              //     },
-              //     child: Text('Submit'),
-              //   ),
-              // ),
-              // Padding(
-              //   padding: const EdgeInsets.only(top: 20),
-              //   child: RaisedButton(
-              //     color: Colors.amber,
-              //     onPressed: () {
-              //       Navigator.push(context,
-              //           MaterialPageRoute(builder: (BuildContext context) {
-              //         return MapsPage();
-              //       }));
-              //     },
-              //     child: Text('Map'),
-              //   ),
-              // )
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: RaisedButton(
+                  color: Colors.amber,
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return DetailPage();
+                    }));
+                  },
+                  child: Text('Submit'),
+                ),
+              ),
             ],
           ),
         ));
