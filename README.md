@@ -1,6 +1,6 @@
 # greeny_go
 
-* The proposed GREENY_GO voice-assistance app maintains a crop repository for the warehouses and farmers to monitor the quality and quantity of stored crops which helps in suggesting crop plantation using ML.
+* The proposed GREENY_GO  app maintains a crop repository for the warehouses and farmers to monitor the quality and quantity of stored crops which helps in suggesting crop plantation using ML.
 
 * This in turn boosts the profit of farmers through high yield and price normalization.
 
